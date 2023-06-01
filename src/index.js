@@ -8,3 +8,13 @@ document.getElementById("app").innerHTML = `
   <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
 </div>
 `;
+const myButton = document.getElementById("my-button");
+myButton.addEventListener("click", function(){
+  console.log("hello world")
+  document.getElementById("my-text").innerHTML = "My notebook";  
+});
+const addDataButton = document.getElementById("add-data");
+//addDataButton.addEventListener("click", function(){
+//  document.getElementById("my-list").appendChild(node) = "text";  
+//});
+
