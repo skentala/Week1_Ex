@@ -183,9 +183,14 @@ myButton.addEventListener("click", function () {
   document.getElementById("my-text").innerHTML = "My notebook";
 });
 var addDataButton = document.getElementById("add-data");
-//addDataButton.addEventListener("click", function(){
-//  document.getElementById("my-list").appendChild(node) = "text";  
-//});
+addDataButton.addEventListener("click", function () {
+  var myList = document.getElementById("my-list");
+  var newElement = document.createElement("li");
+  var newText = document.getElementById("new-text").value;
+  var newListValue = document.createTextNode(newText);
+  newElement.appendChild(newListValue);
+  myList.appendChild(newElement);
+});
 },{"./styles.css":"src/styles.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -211,7 +216,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45925" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44241" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

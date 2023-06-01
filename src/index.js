@@ -14,7 +14,12 @@ myButton.addEventListener("click", function(){
   document.getElementById("my-text").innerHTML = "My notebook";  
 });
 const addDataButton = document.getElementById("add-data");
-//addDataButton.addEventListener("click", function(){
-//  document.getElementById("my-list").appendChild(node) = "text";  
-//});
+addDataButton.addEventListener("click", function(){
+  const myList = document.getElementById("my-list")
+  const newElement = document.createElement("li");
+  const newText = document.getElementById("new-text").value;
+  const newListValue = document.createTextNode(newText);
+  newElement.appendChild(newListValue);
+  myList.appendChild(newElement);
+});
 
