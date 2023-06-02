@@ -187,8 +187,7 @@ addDataButton.addEventListener("click", function () {
   var myList = document.getElementById("my-list");
   var newElement = document.createElement("li");
   var newText = document.getElementById("new-text").value;
-  var newListValue = document.createTextNode(newText);
-  newElement.appendChild(newListValue);
+  newElement.innerText = newText;
   myList.appendChild(newElement);
 });
 },{"./styles.css":"src/styles.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {

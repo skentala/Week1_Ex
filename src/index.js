@@ -18,8 +18,7 @@ addDataButton.addEventListener("click", function(){
   const myList = document.getElementById("my-list")
   const newElement = document.createElement("li");
   const newText = document.getElementById("new-text").value;
-  const newListValue = document.createTextNode(newText);
-  newElement.appendChild(newListValue);
+  newElement.innerText = newText;
   myList.appendChild(newElement);
 });
 
